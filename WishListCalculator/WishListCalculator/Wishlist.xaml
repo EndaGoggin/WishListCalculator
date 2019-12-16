@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WishListCalculator.Wishlist"
+             BackgroundImage="Images/background.png">
+
+    <StackLayout>
+        <!-- Page Header -->
+        <Label x:Name="Header" Text="Wish List Calculator" 
+                       BackgroundColor="Black"
+                       TextColor="White" HorizontalTextAlignment="Center"
+                       FontSize="35" FontFamily="monospace" HeightRequest="60"
+                       VerticalTextAlignment="Center"/>
+
+        <Label Margin="20"/>
+
+        <!-- Main Grid-->
+        <Grid x:Name="GrdContentPage" HorizontalOptions="Center">
+
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <!-- Wish list headers-->
+            <Label x:Name="Number" Text="Number" FontSize="Large"
+               HorizontalOptions="Center" HeightRequest="40"
+               Grid.Row="0" Grid.Column="0"/>
+            <Label x:Name="Name" Text="Name" FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="0" Grid.Column="1"/>
+            <Label x:Name="Price" Text="Time" FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="0" Grid.Column="2"/>
+
+            <!-- Wish list items-->
+            <Label x:Name="Number1" Text="1." FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="1" Grid.Column="0"/>
+            <Label x:Name="Name1" Text="" FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="1" Grid.Column="1"/>
+            <Label x:Name="Price1" Text="" FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="1" Grid.Column="2"/>
+
+            <Label x:Name="Number2" Text="2." FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="2" Grid.Column="0"/>
+            <Label x:Name="Name2" Text="" FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="2" Grid.Column="1"/>
+            <Label x:Name="Price2" Text="" FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="2" Grid.Column="2"/>
+
+            <Label x:Name="Number3" Text="3." FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="3" Grid.Column="0"/>
+            <Label x:Name="Name3" Text="" FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="3" Grid.Column="1"/>
+            <Label x:Name="Price3" Text="" FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="3" Grid.Column="2"/>
+
+            <Label x:Name="Number4" Text="4." FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="4" Grid.Column="0"/>
+            <Label x:Name="Name4" Text="" FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="4" Grid.Column="1"/>
+            <Label x:Name="Price4" Text="" FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="4" Grid.Column="2"/>
+
+            <Label x:Name="Number5" Text="5." FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="5" Grid.Column="0"/>
+            <Label x:Name="Name5" Text="" FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="5" Grid.Column="1"/>
+            <Label x:Name="Price5" Text="" FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="5" Grid.Column="2"/>
+
+            <!-- Bottom Buttons-->
+            <Button x:Name="BtnRefresh" Text="Refresh"
+                Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3"
+                    Clicked="BtnRefresh_Clicked" Margin="10"
+                    CornerRadius="10"   
+                    BackgroundColor="Black" BorderColor="Gray"
+                    TextColor="White"/>
+            <Button x:Name="BtnClear" Text="Clear"
+                Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3"
+                    CornerRadius="10"   
+                    BackgroundColor="Black" BorderColor="Gray"
+                    TextColor="White"
+                    Clicked="BtnClear_Clicked" Margin="10"/>
+            
+            
+        </Grid>
+    </StackLayout>
+</ContentPage>

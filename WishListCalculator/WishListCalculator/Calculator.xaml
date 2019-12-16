@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            x:Class="WishListCalculator.Calculator"
+            BackgroundImage="Images/background.png">
+
+    <ScrollView>
+        <StackLayout x:Name="SLContentPage">
+
+            <!-- Main Header -->
+            <Label x:Name="Header" Text="Wish List Calculator" 
+                   BackgroundColor="Black"
+                   TextColor="White" HorizontalTextAlignment="Center"
+                   FontSize="35" FontFamily="monospace" HeightRequest="60"
+                   VerticalTextAlignment="Center"/>
+
+            <!-- Spacing-->
+            <Label Margin="20"/>
+
+            <!-- Main inputs from user-->
+            <Label Text="Name of Item" HorizontalTextAlignment="Center"
+                   FontSize="20" FontAttributes="Bold"/>
+            <Entry x:Name = "Name" Placeholder = "Enter Name of Item" 
+                   HorizontalTextAlignment="Center" Margin="20"/>
+            <Label Text="Price of Item" HorizontalTextAlignment="Center"
+                   FontSize="20" FontAttributes="Bold"/>
+            <Entry x:Name = "Price" Placeholder = "Enter Price of Item" 
+                   HorizontalTextAlignment="Center" Margin="20"/>
+            <Label Text="Hourly Rate" HorizontalTextAlignment="Center"
+                   FontSize="20" FontAttributes="Bold"/>
+            <Entry x:Name = "HourlyRate" Placeholder = "Enter your Hourly Rate" 
+                   HorizontalTextAlignment="Center" Margin="20"/>
+
+            <!-- Bottom Buttons-->
+            <Button x:Name="btnCalculate" Text="Calculate" Margin="10"
+                    CornerRadius="10"   
+                    BackgroundColor="Black" BorderColor="Gray"
+                    TextColor="White"
+                    Clicked="BtnCalculate_Clicked"/>
+            <Button x:Name="btnSave" Text="Save" Margin="10"
+                    CornerRadius="10" BackgroundColor="Black"
+                    BorderColor="Gray" TextColor="White"
+                    Clicked="BtnSave_Clicked"/>
+            <Button x:Name="RateAns" Text="" FontSize="20" FontAttributes="Bold"
+                    TextColor="Black" CornerRadius="20" BackgroundColor="White"
+                    BorderColor="Black" />
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
